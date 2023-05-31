@@ -23,9 +23,11 @@ function postVC(datacenter) {
     .catch(error => console.log('error', error));
 }
 
+let data = ['EU1-LON-kvm', 'EU2-HEL-kvm', 'EU3-FSN-kvm', 'EU4-GRA-kvm', 'CA1-BHS-kvm', 'US1-CHI-kvm'];
 
-postVC('EU1-LON-kvm');
-postVC('EU3-FSN-kvm');
-postVC('CA1-BHS-kvm');
-postVC('US3-CHI-kvm');
+setInterval(() => {
+  data.map(item => postVC(item));
+}, 2000);
 
+
+// postVC('US3-CHI-kvm');
