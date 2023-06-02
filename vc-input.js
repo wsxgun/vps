@@ -8,11 +8,14 @@ function submitVC() {
     node.checked = true;
   }
 
-  let btn = document.getElementsByName('submit_button')[0];
-  btn.disabled = false;
-  btn.click();
+  //let btn = document.getElementsByName('submit_button')[0];
+  //btn.disabled = false;
+  //btn.click();
 
   console.log('------');
 
 }
+
+submitVC();
+
 
