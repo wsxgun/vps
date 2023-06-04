@@ -42,7 +42,7 @@ function submit(datacenter, cha) {
     .then(response => console.log(response.text()))
     .then(result => {
       console.log('--------' + result);
-      location.reload();
+     // location.reload();
     })
     .catch(error => {
       console.log('error', error);
