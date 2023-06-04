@@ -1,5 +1,5 @@
 function submitVC() {
-
+  document.getElementById('datacenter').options[1].selected = true;
   document.getElementById('os').options[4].selected = true;
   document.getElementById('password').value = 'wsxgun122518';
   document.getElementById('purpose').options[5].selected = true;
