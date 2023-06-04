@@ -19,6 +19,7 @@ function submit(datacenter, cha) {
   myHeaders.append('Cookie', document.cookie);
 
   const urlencoded = new URLSearchParams();
+  datacenter = document.getElementById('datacenter').options[1].value;
   urlencoded.append('location', datacenter);
   urlencoded.append('os', 'centos-7.9');
   urlencoded.append('password', 'wsxgun122518');
